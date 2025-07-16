@@ -149,3 +149,42 @@ export const aboutImgData = [
       "https://kriesi.at/themes/enfold-gym/wp-content/uploads/sites/63/2016/02/hero-5-1030x494.jpg",
   },
 ];
+
+export const classesData = [
+  {
+    img: "https://kriesi.at/themes/enfold-gym/wp-content/uploads/sites/63/2016/02/hero-3-1030x494.jpg",
+    displayName: "AEROBICS",
+    description:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget.",
+  },
+  {
+    img: "https://kriesi.at/themes/enfold-gym/wp-content/uploads/sites/63/2016/02/hero-4-1030x494.jpg",
+    displayName: "CROSSFIT",
+    description:
+      "Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridi.",
+  },
+  {
+    img: "https://kriesi.at/themes/enfold-gym/wp-content/uploads/sites/63/2016/02/hero-6.jpg",
+    displayName: "GYMNASTICS",
+    description:
+      "Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.",
+  },
+  {
+    img: "https://kriesi.at/themes/enfold-gym/wp-content/uploads/sites/63/2016/02/hero-2.jpg",
+    displayName: "PUMPINGIRON",
+    description:
+      "Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus.",
+  },
+  {
+    img: "https://kriesi.at/themes/enfold-gym/wp-content/uploads/sites/63/2016/02/hero-5-1030x494.jpg",
+    displayName: "RUNNING & SPINNING",
+    description:
+      "Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam loapi.",
+  },
+  {
+    img: "https://kriesi.at/themes/enfold-gym/wp-content/uploads/sites/63/2016/02/hero-1-1030x494.jpg",
+    displayName: "WEIGHT LIFTING",
+    description:
+      "Lorem ipsum dan massa. Cum sociis natoque penatibus et magnis dis consequat vitae par.",
+  },
+];

@@ -1,4 +1,5 @@
 import { Link, NavLink, Outlet } from "react-router-dom";
+import { footerData } from "../../utils/mockData";
 
 function Layout() {
   return (
@@ -8,13 +9,13 @@ function Layout() {
           src="https://kriesi.at/themes/enfold-gym/wp-content/uploads/sites/63/2016/02/logo.png"
           className="w-[15%]"
         />
-        <nav className="flex gap-10 text-[16px] font-semibold !mr-[40px]">
+        <nav className="flex gap-10 text-[16px] font-semibold !mr-[40px] text-[#696969]">
           {[
             { name: "Home", path: "/" },
             { name: "About", path: "/about" },
             { name: "Classes", path: "/classes" },
             { name: "Price", path: "/price" },
-            { name: "News", path: "/news" },
+            // { name: "News", path: "/news" },
             { name: "Contact", path: "/contact" },
           ].map((link) => (
             <NavLink
@@ -34,6 +35,35 @@ function Layout() {
 
       <hr />
       <Outlet />
+
+      <footer className="bg-black w-[100%] px-[50px] h-[400px] flex justify-center items-center text-[#AAAAAA] ">
+        <div className="p-[40px] w-full mt-[-22px]">
+          <hr />
+          <h1 className="text-[19px] font-bold py-[8px]">INTRESTING INFOS</h1>
+          <hr />
+          <p className="py-[9px]">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor.
+          </p>
+        </div>
+        <div className="p-[40px] w-full">
+          <hr />
+          <h1 className="text-[19px] font-bold py-[8px]">ENFOLD GYM</h1>
+          <hr />
+          <p className="py-[6px]">1818 N Vermont Ave</p>
+          <p>Los Angeles, CA, United States</p>
+          <p className="py-[2px]">(555) 774 433</p>
+          <p>office@enfold-gym.com</p>
+        </div>
+        <div className="p-[40px] w-full">
+          <hr />
+          <h1 className="text-[19px] font-bold py-[8px]">OPENING HOURS</h1>
+          <hr />
+          <p className="py-[6px]">Mo-Fr: 8:00-22:00</p>
+          <p className="py-[6px]">Sa: 8:00-24:00</p>
+          <p className="py-[6px]">So: 8:00-14:00</p>
+        </div>
+      </footer>
     </section>
   );
 }
