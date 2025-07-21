@@ -1,13 +1,11 @@
 // tailwind.config.js
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      fontFamily: {
-        primary: ["Oswald", "sans-serif"],
-        secondary: ["Lato", "sans-serif"],
-        default: ["Helvetica", "Arial", "sans-serif"],
-      },
+      // fontFamily: {
+      //   custom: ["Lato", "Helvetica", "Arial", "sans-serif"],
+      // },
     },
   },
   plugins: [],

@@ -6,10 +6,12 @@ import Classes from "./Components/Classes";
 import Price from "./Components/Price";
 import News from "./Components/News";
 import Contact from "./Components/Contact";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />

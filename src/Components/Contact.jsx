@@ -66,7 +66,7 @@ function Contact() {
             </h1>
             <form
               // onSubmit={handleSubmit}
-              className="w-full py-[20px]"
+              className="w-full py-[20px] text-left"
             >
               <div className="mb-4 flex gap-3">
                 <input
