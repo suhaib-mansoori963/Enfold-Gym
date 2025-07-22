@@ -4,7 +4,6 @@ import Layout from "./Components/Layout/Layout";
 import About from "./Components/About";
 import Classes from "./Components/Classes";
 import Price from "./Components/Price";
-import News from "./Components/News";
 import Contact from "./Components/Contact";
 import ScrollToTop from "./Components/ScrollToTop";
 
@@ -18,7 +17,6 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/classes" element={<Classes />} />
           <Route path="/price" element={<Price />} />
-          <Route path="/news" element={<News />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<h1>Page Not Found</h1>} />
         </Route>
