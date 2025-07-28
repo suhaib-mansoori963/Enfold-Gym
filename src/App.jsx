@@ -6,6 +6,7 @@ import Classes from "./Components/Classes";
 import Price from "./Components/Price";
 import Contact from "./Components/Contact";
 import ScrollToTop from "./Components/ScrollToTop";
+import NotFound from "./Components/NotFound";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
           <Route path="/classes" element={<Classes />} />
           <Route path="/price" element={<Price />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<h1>Page Not Found</h1>} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
