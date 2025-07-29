@@ -142,7 +142,7 @@ function Contact() {
       </div>
 
       <div className="py-[50px]">
-        <div className="flex flex-wrap gap-20 w-[90%] mx-[120px] lg:mx-[70px] md:mx-[50px]">
+        <div className="flex flex-wrap gap-20 w-[90%] mx-[120px] lg:mx-[70px] md:mx-[50px] sm:mx-[50px]">
           <div className="w-[40%]">
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean

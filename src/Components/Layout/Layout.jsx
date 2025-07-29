@@ -91,7 +91,7 @@ export default function Layout() {
           </div>
         )}
 
-        <footer className="bg-black w-full px-[50px] h-[400px] flex flex-wrap justify-center items-center text-[#AAAAAA]">
+        <footer className="bg-black w-full px-[50px] sm:h-[700px] sm:text-center h-[400px] flex flex-wrap justify-center items-center text-[#AAAAAA]">
           <div className="p-[40px] w-full md:w-1/3 mt-[-22px]">
             <hr />
             <h1 className="text-[19px] font-bold py-[8px]">INTRESTING INFOS</h1>

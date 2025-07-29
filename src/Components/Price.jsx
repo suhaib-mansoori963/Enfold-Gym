@@ -52,7 +52,7 @@ function Price() {
         {/* Content */}
         <div className="relative z-10 flex flex-col md:flex-row flex-wrap items-center justify-center gap-10 px-4 py-10 w-full">
           {/* First Card */}
-          <div className="w-full md:w-[45%] lg:w-[26%] lg:h-[576px] bg-white h-[600px] text-black text-[20px]">
+          <div className="w-full md:w-[45%] lg:w-[26%] sm:w-[70%] lg:h-[576px] sm:h-[620px] bg-white h-[600px] text-black text-[20px]">
             <div className="p-[14px] font-bold">
               <h3>BASIC</h3>
             </div>
@@ -75,7 +75,7 @@ function Price() {
           </div>
 
           {/* Second Card */}
-          <div className="w-full md:w-[45%] lg:w-[26%] lg:h-[576px] bg-white h-[600px] text-black text-[20px]">
+          <div className="w-full md:w-[45%] lg:w-[26%] sm:w-[70%]  lg:h-[576px] sm:h-[620px] bg-white h-[600px] text-black text-[20px]">
             <div className="p-[14px] font-bold">
               <h3>ADVANCED</h3>
             </div>
@@ -98,7 +98,7 @@ function Price() {
           </div>
 
           {/* Third Section */}
-          <div className="w-full md:w-[90%] lg:w-[26%] h-[600px] text-white text-[20px] text-center items-center flex flex-col justify-center">
+          <div className="w-full md:w-[90%] lg:w-[26%] sm:w-[70%]  h-[600px] sm:h-[620px] text-white text-[20px] text-center items-center flex flex-col justify-center">
             <div className="py-[32px]">
               <h3 className="text-[40px] md:text-[50px] font-bold">
                 87{" "}
@@ -128,11 +128,11 @@ function Price() {
       </div>
 
       <div className="py-[50px]">
-        <h1 className="text-[40px] lg:text-[70px] md:text-[60px] font-bold mx-[120px] md:mx-[50px] ">
+        <h1 className="text-[40px] lg:text-[70px] md:text-[60px] font-bold mx-[120px] md:mx-[50px] sm:mx-[50px]">
           FAQ<span className="text-[#d63e2d]">.</span>
         </h1>
 
-        <div className="flex flex-wrap gap-20 w-[90%] mx-[120px] lg:mx-[70px] md:mx-[50px]">
+        <div className="flex flex-wrap gap-20 w-[90%] mx-[120px] lg:mx-[70px] md:mx-[50px] sm:mx-[50px]">
           <div className="w-[40%]">
             <h4 className="text-[16px] lg:text-[20px] ">
               <strong>STUDIO RELATED</strong>

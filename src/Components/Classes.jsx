@@ -42,26 +42,24 @@ function Classes() {
         </div>
       </div>
 
-      <div className="bg-black !h-[700px] flex flex-wrap justify-between px-[20px] pt-[20px]">
-        {classesData.map((items, index) => {
-          return (
-            <div className="w-[32%]" key={index}>
-              <div className="overflow-hidden cursor-pointer ">
-                {/* Container to clip image */}
-                <img
-                  src={items?.img}
-                  className="object-cover transition-transform duration-300 ease-in-out hover:scale-110"
-                />
-              </div>
-              <div className="bg-white p-[20px] mb-[20px]">
-                <h3 className="!text-black !text-[15px] font-bold">
-                  {items?.displayName}
-                </h3>
-                <p className="text-[#696969]">{items?.description}</p>
-              </div>
+      <div className="bg-black min-h-[700px] flex flex-wrap justify-between px-[20px] pt-[20px]">
+        {classesData.map((items, index) => (
+          <div className="w-full sm:w-[48%] lg:w-[32%] mb-[20px]" key={index}>
+            <div className="overflow-hidden cursor-pointer">
+              <img
+                src={items?.img}
+                alt={items?.displayName}
+                className="object-cover w-full h-[200px] transition-transform duration-300 ease-in-out hover:scale-110"
+              />
             </div>
-          );
-        })}
+            <div className="bg-white p-[20px]">
+              <h3 className="text-black text-[15px] font-bold">
+                {items?.displayName}
+              </h3>
+              <p className="text-[#696969]">{items?.description}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );

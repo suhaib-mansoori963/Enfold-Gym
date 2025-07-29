@@ -6,7 +6,7 @@ function HomeButtonSection() {
     <>
       <div className="bg-white w-full h-[300px] flex justify-center items-center text-black text-center p-8">
         <div>
-          <h1 className="text-[50px] md:text-[40px] font-bold !mb-[20px]">
+          <h1 className="text-[50px] md:text-[40px] sm:text-[35px] font-bold !mb-[20px]">
             SUBCRIBE TO OUR NEWSLETTER
             <span className="text-[#d63e2d] ">.</span>
           </h1>
@@ -24,7 +24,7 @@ function HomeButtonSection() {
             />
             <button
               type="submit"
-              className="bg-[#d63e2d] px-[60px] py-[10px] text-white font-semibold md:mt-[20px]"
+              className="bg-[#d63e2d] px-[60px] py-[10px] text-white font-semibold md:mt-[20px] sm:mt-[20px]"
             >
               Subscribe
             </button>
@@ -67,10 +67,10 @@ function HomeButtonSection() {
               color: item.color,
             }}
           >
-            <h2 className="text-[50px] md:text-[40px] font-bold mb-4">
+            <h2 className="text-[50px] md:text-[40px] sm:text-[40px]  font-bold mb-4">
               {item.title}
             </h2>
-            <p className="text-[22px] md:text-[18px] max-w-md text-center">
+            <p className="text-[22px] md:text-[18px] sm:text-[18px]  max-w-md text-center">
               {item.description}
             </p>
           </div>

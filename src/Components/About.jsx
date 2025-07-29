@@ -62,7 +62,7 @@ function About() {
           {aboutImgData.map((item, index) => (
             <div
               key={index}
-              className="w-full lg:w-1/3 h-[300px] cursor-pointer"
+              className="w-full lg:w-1/3 sm:w-[90%] h-[300px] cursor-pointer"
               onClick={() => handleClick(index)}
             >
               <img
@@ -76,7 +76,7 @@ function About() {
 
         {/* Text/Image Split Section */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="w-full md:w-1/2 h-[300px]">
+          <div className="w-full md:w-1/2 sm:w-[70%] h-[300px]">
             <img
               src="https://kriesi.at/themes/enfold-gym/wp-content/uploads/sites/63/2016/02/hero-3-1030x494.jpg"
               className="w-full h-full object-cover"
@@ -112,10 +112,10 @@ function About() {
 
         {/* Content */}
         <div className="w-[60%] flex flex-col justify-center items-center h-full text-white text-center p-8 z-10">
-          <h1 className="text-[50px] font-bold">
+          <h1 className="text-[50px] sm:text-[35px] font-bold">
             THE FUTURE IS BRIGHT<span className="text-[#d63e2d] ">.</span>
           </h1>
-          <p className="text-[16px] max-w-2xl mb-6">
+          <p className="text-[16px] sm:text-[14px] max-w-2xl mb-6">
             Enfold Gym leads the fitness industry when it comes to helping
             people reach their fitness goals. We have Crossfit courses, a full
             weight room, multiple cardio areas, personal trainings, group
@@ -134,10 +134,10 @@ function About() {
               color: item.color,
             }}
           >
-            <h2 className="text-[50px] md:text-[40px] font-bold mb-4">
+            <h2 className="text-[50px] md:text-[40px] sm:text-[30px] font-bold mb-4">
               {item.title}
             </h2>
-            <p className="text-[22px] md:text-[18px] max-w-md text-center">
+            <p className="text-[22px] md:text-[18px] sm:text-[18px] max-w-md text-center">
               {item.description}
             </p>
           </div>

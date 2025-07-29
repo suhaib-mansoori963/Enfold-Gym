@@ -19,7 +19,7 @@ function Home() {
         centeredSlides={true}
         pagination={{ clickable: true }}
         navigation={true}
-        className="h-[600px] md:h-[500px]"
+        className="h-[600px] md:h-[500px] sm:h-[400px]"
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
@@ -30,11 +30,11 @@ function Home() {
                 className="w-full  h-full object-cover"
               />
               <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center p-4">
-                <h2 className="text-[70px] md:text-[40px] font-bold mb-4">
+                <h2 className="text-[70px] md:text-[40px]  sm:text-[30px] font-bold mb-4">
                   {slide.title}
                   <span className="text-[#d63e2d]">.</span>
                 </h2>
-                <p className="text-[38px] md:text-[30px] max-w-xl">
+                <p className="text-[38px] md:text-[30px]  sm:text-[25px] max-w-xl">
                   {slide.description}
                 </p>
               </div>
@@ -90,10 +90,10 @@ function Home() {
       {/* Classes Section */}
       <div className="h-[400px] flex flex-col justify-center items-center text-black text-center p-8">
         <div className="w-[60%] h-full p-8 mt-[25px]">
-          <h1 className="text-[45px] font-bold">
+          <h1 className="text-[45px] sm:text-[35px] font-bold">
             CLASSES TO MAKE IN OUR GYM<span className="text-[#d63e2d]">.</span>
           </h1>
-          <p className="text-[16px]">
+          <p className="text-[16px] sm:text-[14px]">
             We offer a multitude of fun and motivating classes that allow you to
             work out alone or with friends. Our trainers are highly educated and
             will make sure you give your all. The classes are:
@@ -102,11 +102,11 @@ function Home() {
       </div>
 
       {/* Class Images Grid */}
-      <div className="flex flex-wrap gap-4 w-[100%] lg:h-[1100px]  h-[900px] bg-black">
+      <div className="flex flex-wrap gap-4 w-[100%] lg:h-[1100px]  sm:h-[1400px] sm:gap-0  h-[900px] bg-black">
         {imageData.map((item, index) => (
           <div
             key={index}
-            className="group relative w-[30%] lg:w-[45%] lg:h-[300px] md:ml-[30px] md:w-[42%] md:h-[250px] h-[400px] ml-[25px] mt-4 flex justify-center items-center overflow-hidden"
+            className="group relative w-[30%] lg:w-[45%] lg:h-[300px] md:ml-[30px] md:w-[42%] md:h-[250px] sm:w-[90%] sm:h-[200px] h-[400px] ml-[25px] mt-4 flex justify-center items-center overflow-hidden"
           >
             <div
               className="absolute inset-0 bg-center bg-cover transition-transform duration-500 scale-100 group-hover:scale-110"
