@@ -56,12 +56,13 @@ function About() {
         </div>
       </div>
 
-      <div className="h-[700px] bg-black">
-        <div className=" flex justify-center items-center gap-4">
+      <div className="min-h-[700px] bg-black flex flex-col gap-6 px-4 py-6">
+        {/* Images Section */}
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-4">
           {aboutImgData.map((item, index) => (
             <div
               key={index}
-              className="w-[30%] h-[300px] cursor-pointer mt-[15px] "
+              className="w-full lg:w-1/3 h-[300px] cursor-pointer"
               onClick={() => handleClick(index)}
             >
               <img
@@ -73,16 +74,19 @@ function About() {
           ))}
         </div>
 
-        <div className="w-[100%] flex justify-between items-center gap-[35px]">
-          <div className="w-[48%] h-[300px] mt-[20px]">
-            <img src="https://kriesi.at/themes/enfold-gym/wp-content/uploads/sites/63/2016/02/hero-3-1030x494.jpg" />
+        {/* Text/Image Split Section */}
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+          <div className="w-full md:w-1/2 h-[300px]">
+            <img
+              src="https://kriesi.at/themes/enfold-gym/wp-content/uploads/sites/63/2016/02/hero-3-1030x494.jpg"
+              className="w-full h-full object-cover"
+            />
           </div>
-          <div className="w-[48%] h-[300px] flex flex-col justify-center items-start p-[20px]">
-            <h1 className="text-[50px] font-bold text-white">
-              HOW IT START
-              <span className="text-[#d63e2d] ">...</span>
+          <div className="w-full md:w-1/2 h-auto flex flex-col justify-center items-start p-4">
+            <h1 className="text-[32px] lg:text-[50px] font-bold text-white">
+              HOW IT START<span className="text-[#d63e2d]">...</span>
             </h1>
-            <p className="text-[16px] text-white leading-8 mt-[20px]">
+            <p className="text-[16px] text-white leading-8 mt-4">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -120,6 +124,36 @@ function About() {
         </div>
       </div>
 
+      <div className=" flex ">
+        {priceData.map((item, index) => (
+          <div
+            key={index}
+            className="p-8 w-full h-[200px] flex flex-col justify-center items-center text-white text-center"
+            style={{
+              backgroundColor: item.backGround,
+              color: item.color,
+            }}
+          >
+            <h2 className="text-[50px] md:text-[40px] font-bold mb-4">
+              {item.title}
+            </h2>
+            <p className="text-[22px] md:text-[18px] max-w-md text-center">
+              {item.description}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      {/* <footer className="bg-black w-full h-[300px] flex justify-center items-center text-[#757575] ">
+        {footerData.map((item, index) => (
+          <div key={index} className="p-[40px] w-full  ">
+            <hr />
+            <h1 className="text-[17px] font-bold py-[8px]">{item.title}</h1>
+            <hr />
+            <p className="py-[9px]">{item.description}</p>
+          </div>
+        ))}
+      </footer> */}
       {/* Fullscreen Modal */}
       {isOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex justify-center items-center">
@@ -148,35 +182,6 @@ function About() {
           </div>
         </div>
       )}
-
-      <div className=" flex ">
-        {priceData.map((item, index) => (
-          <div
-            key={index}
-            className="p-8 w-full h-[200px] flex flex-col justify-center items-center text-white text-center"
-            style={{
-              backgroundColor: item.backGround,
-              color: item.color,
-            }}
-          >
-            <h2 className="text-[50px] font-bold mb-4">{item.title}</h2>
-            <p className="text-[22px] max-w-md text-center">
-              {item.description}
-            </p>
-          </div>
-        ))}
-      </div>
-
-      {/* <footer className="bg-black w-full h-[300px] flex justify-center items-center text-[#757575] ">
-        {footerData.map((item, index) => (
-          <div key={index} className="p-[40px] w-full  ">
-            <hr />
-            <h1 className="text-[17px] font-bold py-[8px]">{item.title}</h1>
-            <hr />
-            <p className="py-[9px]">{item.description}</p>
-          </div>
-        ))}
-      </footer> */}
     </section>
   );
 }

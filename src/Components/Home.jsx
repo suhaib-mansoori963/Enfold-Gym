@@ -19,7 +19,7 @@ function Home() {
         centeredSlides={true}
         pagination={{ clickable: true }}
         navigation={true}
-        className="h-[600px]"
+        className="h-[600px] md:h-[500px]"
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
@@ -27,14 +27,16 @@ function Home() {
               <img
                 src={slide.image}
                 alt={slide.title}
-                className="w-full h-full object-cover"
+                className="w-full  h-full object-cover"
               />
               <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center p-4">
-                <h2 className="text-[70px] font-bold mb-4">
+                <h2 className="text-[70px] md:text-[40px] font-bold mb-4">
                   {slide.title}
                   <span className="text-[#d63e2d]">.</span>
                 </h2>
-                <p className="text-[38px] max-w-xl">{slide.description}</p>
+                <p className="text-[38px] md:text-[30px] max-w-xl">
+                  {slide.description}
+                </p>
               </div>
             </div>
           </SwiperSlide>
@@ -100,11 +102,11 @@ function Home() {
       </div>
 
       {/* Class Images Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full h-[900px] bg-black">
+      <div className="flex flex-wrap gap-4 w-[100%] lg:h-[1100px]  h-[900px] bg-black">
         {imageData.map((item, index) => (
           <div
             key={index}
-            className="group relative w-full h-[400px] mt-5 flex justify-center items-center overflow-hidden"
+            className="group relative w-[30%] lg:w-[45%] lg:h-[300px] md:ml-[30px] md:w-[42%] md:h-[250px] h-[400px] ml-[25px] mt-4 flex justify-center items-center overflow-hidden"
           >
             <div
               className="absolute inset-0 bg-center bg-cover transition-transform duration-500 scale-100 group-hover:scale-110"
